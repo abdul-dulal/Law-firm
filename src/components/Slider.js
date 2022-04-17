@@ -3,6 +3,7 @@ import { Carousel } from "react-bootstrap";
 import slider1 from "../assets/images/slider/slider1.png";
 import slider2 from "../assets/images/slider/slider2.jpg";
 import slider3 from "../assets/images/slider/slider3.jpg";
+import { Link } from "react-router-dom";
 const Slider = () => {
   return (
     <>
@@ -20,9 +21,9 @@ const Slider = () => {
               adequate knowledge, expertise, lawyers, consultants and logistics
               to undertake any legal, para legal or related service.
             </p>
-            <button type="button" className="btn btn-info py-3 px-5">
-              Book Now
-            </button>
+            <Link Link to={"/signup"} className="btn btn-primary py-3 px-5">
+              Contact Now
+            </Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -39,9 +40,9 @@ const Slider = () => {
               adequate knowledge, expertise, lawyers, consultants and logistics
               to undertake any legal, para legal or related service.
             </p>
-            <button type="button" className="btn btn-info py-3 px-5">
+            <Link to={"signup"} className="btn btn-primary py-3 px-5">
               Book Now
-            </button>
+            </Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -59,9 +60,9 @@ const Slider = () => {
               in Bangladesh and we plan our course of action to meet the desired
               goal of the client..
             </p>
-            <button type="button" className="btn btn-info py-3 px-5">
+            <Link to={"/signup"} className="btn btn-primary py-3 px-5">
               Book Now
-            </button>
+            </Link>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
