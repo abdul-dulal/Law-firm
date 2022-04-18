@@ -1,5 +1,24 @@
 # Getting Started with Create React App
 
+### Project Name: law-firm-in-bangladesh
+### Live Link : [hello]
+
+### uses Tecnology
+
+* React
+* Tailwind
+* Flowbite
+* React Router
+* React Firebase Hooks
+
+### Pages 
+* Home
+* About
+* Blogs
+* Checkout
+* Login
+* Signup
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
