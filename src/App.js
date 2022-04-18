@@ -11,6 +11,7 @@ import PageNotFound from "./components/page/PageNotFound";
 import Signup from "./components/page/Signup";
 import RequirAuth from "./components/RequirAuth";
 import Footer from "./components/shared/Footer";
+import SignleService from "./components/SignleService";
 function App() {
   return (
     <div className="">
@@ -29,6 +30,8 @@ function App() {
               </RequirAuth>
             }
           />
+          {/* <Route path="/singleservice" element={<SignleService />} /> */}
+          <Route path="/singleservice/:serviceId" element={<SignleService />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="*" element={<PageNotFound />} />

@@ -7,8 +7,12 @@ import Loading from "./Loading";
 
 const RequirAuth = ({ children }) => {
   const location = useLocation();
-  const [user, loading] = useAuthState(auth);
+  const [user, loading, error] = useAuthState(auth);
+  console.log("inside requirauth" + user);
   if (loading) {
+    return <Loading />;
+  }
+  if (error) {
     return <Loading />;
   }
   if (!user) {
