@@ -1,16 +1,15 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
 import law from "../assets/images/law-1-1.png";
 import Balance from "./Balance";
-const Information = () => {
+const Banner = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto my-8">
       <div className="  ">
-        <h1 className="text-white text-center">WHO am i ? </h1>
+        <h1 className="text-white text-center">Who am i ? </h1>
         <Balance />
       </div>
-      <div className="grid  md:grid-cols-2">
-        <div>
+      <div className="grid gap-4  md:grid-cols-2 ">
+        <div className="my-auto">
           <p className="text-white">
             <span className="text-xl text-gray-400">
               S Hossain &amp; Associates
@@ -39,4 +38,4 @@ const Information = () => {
   );
 };
 
-export default Information;
+export default Banner;

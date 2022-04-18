@@ -1,6 +1,6 @@
 import React from "react";
 import ClientChose from "../ClientChose";
-import Information from "../Information";
+import Banner from "../Banner";
 import Services from "../Services";
 import Slider from "../Slider";
 
@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       <Slider />
-      <Information />
+      <Banner />
       <Services />
       <ClientChose />
     </div>

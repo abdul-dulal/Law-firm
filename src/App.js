@@ -14,8 +14,8 @@ import Footer from "./components/shared/Footer";
 function App() {
   return (
     <div className="">
-      <Header />
       <Layout>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />

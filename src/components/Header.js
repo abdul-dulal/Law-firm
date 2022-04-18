@@ -8,19 +8,13 @@ import Signout from "./Signout";
 
 const Header = () => {
   const [user] = useAuthState(auth);
+
   return (
     <>
-      <Navbar
-        collapseOnSelect
-        expand="lg"
-        sticky="top"
-        bg="dark"
-        variant="dark"
-        style={{ position: "sticky", top: "0" }}
-      >
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
           <Navbar.Brand as={Link} to="/">
-            <img src={img} height="30" width={50} alt="" />
+            <img src={img} height="30" width={200} alt="" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

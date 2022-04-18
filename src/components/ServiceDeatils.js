@@ -5,7 +5,7 @@ const ServiceDeatils = ({ service }) => {
   const { title, descrption, price, img } = service;
   return (
     <div>
-      <div className="text-center  max-w-sm bg-[#374151] rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+      <div className="text-center  mb-3 max-w-sm bg-[#374151] rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
         <img className="rounded-t-lg h-20 w-15 mx-auto mt-3" src={img} alt="" />
         <div className="p-5">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">

@@ -4,11 +4,11 @@ const Balance = () => {
   return (
     <div>
       <div className="flex items-center justify-center w-full">
-        <div className="bg-green-500 w-24 " style={{ height: "2px" }}></div>
-        <p className="mt-2 px-2 text-white text-3xl">
+        <div className="bg-[#C89A69] w-24 " style={{ height: "2px" }}></div>
+        <p className="mt-2 px-2 text-[#C89A69] text-3xl">
           <FaBalanceScale />
         </p>
-        <div className="bg-green-500 w-24" style={{ height: "2px" }}></div>
+        <div className="bg-[#C89A69] w-24" style={{ height: "2px" }}></div>
       </div>
     </div>
   );
