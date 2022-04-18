@@ -15,6 +15,7 @@ import RequirAuth from "./components/RequirAuth";
 import Footer from "./components/shared/Footer";
 import SignleService from "./components/SignleService";
 export const serviceContext = createContext();
+
 function App() {
   const [services, setServices] = useService();
   return (
@@ -35,7 +36,7 @@ function App() {
                 </RequirAuth>
               }
             />
-            {/* <Route path="/singleservice" element={<SignleService />} /> */}
+
             <Route
               path="/singleservice/:serviceId"
               element={<SignleService />}

@@ -11,7 +11,7 @@ const Slider = () => {
       <Carousel>
         <Carousel.Item>
           <img
-            className="d-block w-100 h-[36rem]"
+            className="d-block w-100 h-[36rem] bg-black opacity-90"
             src={slider1}
             alt="First slide"
           />

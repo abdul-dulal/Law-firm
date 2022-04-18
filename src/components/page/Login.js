@@ -19,13 +19,16 @@ const Login = () => {
   const emailRef = useRef("");
 
   const from = location.state?.from?.pathname || "/";
-  console.log(location);
+
+  // singin
   const handleLogin = (event) => {
     event.preventDefault();
     const email = event.target.email.value;
     const password = event.target.password.value;
     signInWithEmailAndPassword(email, password);
   };
+
+  // reset password
   const resetPssword = async () => {
     const email = emailRef.current.value;
     if (email) {
@@ -35,6 +38,8 @@ const Login = () => {
       toast("Enter your Email");
     }
   };
+
+  // error
   let errorElement;
 
   if (error || error2) {

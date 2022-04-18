@@ -11,8 +11,8 @@ const ClientChose = () => {
         <h1>WHY CLIENTS CHOOSE ME?</h1>
         <Balance />
         <p>
-          We, S Hossain and Associates always try our best to find out what is
-          the desired outcome of the clients from <br /> the services we are
+          S Hossain and Associates always try our best to find out what is the
+          desired outcome of the clients from <br /> the services we are
           rendering to them ; and we plan our course of action to meet the
           desired goal of the client and <br /> thus we i.e. S Hossain &amp;
           Associates Bangladesh Law Firm and our client walk in the same path

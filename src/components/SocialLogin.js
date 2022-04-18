@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   useSignInWithGithub,
   useSignInWithGoogle,
@@ -22,9 +22,15 @@ const SocialLogin = () => {
       </div>
     );
   }
-  if (user || user1) {
-    navigate(from, { replace: true });
-  }
+  useEffect(() => {
+    if (user || user1) {
+      navigate(from, { replace: true });
+    }
+  }, [user, user1]);
+  console.log(user);
+  // if (user || user1) {
+  //   navigate(from, { replace: true });
+  // }
 
   if (loading || loading1) {
     return <p>loading......</p>;
