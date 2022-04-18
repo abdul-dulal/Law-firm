@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import {
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
@@ -17,7 +17,9 @@ const Login = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const emailRef = useRef("");
-  let from = location.state?.from?.pathname || "/";
+
+  const from = location.state?.from?.pathname || "/";
+  console.log(location);
   const handleLogin = (event) => {
     event.preventDefault();
     const email = event.target.email.value;
